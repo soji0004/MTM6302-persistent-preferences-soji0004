@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persistent Preferences</title>
+    <!-- Linking Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Linking your custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <ul id="itemList" class="list-group">
+            <!-- List items will be dynamically added here -->
+        </ul>
+
+        <div id="preferencesPanel" class="mt-4 p-3 border">
+            <h2 class="mb-4">Preferences Panel</h2>
+            <div class="form-group">
+                <label for="themeSelect">Select Theme:</label>
+                <select id="themeSelect" class="form-control">
+                    <option value="light-mode">Light Mode</option>
+                    <option value="dark-mode">Dark Mode</option>
+                    <option value="blue-mode">Blue Mode</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="listStyleSelect">Select List Style:</label>
+                <select id="listStyleSelect" class="form-control">
+                    <option value="disc">Disc</option>
+                    <option value="circle">Circle</option>
+                    <option value="square">Square</option>
+                    <option value="decimal">Decimal</option>
+                    <option value="lower-alpha">Lower Alpha</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="newItem">Add Item:</label>
+                <input type="text" id="newItem" class="form-control" />
+                <button id="addItemBtn" class="btn btn-primary mt-3">Add Item</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js (required for Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Your custom script -->
+    <script src="script.js"></script>
+
+    <script>
+        // Attach event listener for list style change
+        document.getElementById("listStyleSelect").addEventListener("change", changeListStyle);
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,39 @@
+/* Apply transition effect to body for smooth background color changes */
+body {
+  transition: background-color 0.3s ease;
+}
+
+/* Light Mode styles */
+.light-mode {
+  background-color: #ffffff;
+  color: #000000; /* Black text color */
+}
+
+/* Blue Mode styles */
+.blue-mode {
+  background-color: cornflowerblue;
+  color: #ffffff; /* White text color */
+}
+
+/* Dark Mode styles */
+.dark-mode {
+  background-color: #333333;
+  color: #ffffff; /* White text color */
+}
+
+/* Adjust text color for list items in Dark Mode */
+.dark-mode #itemList {
+  color: #000000; /* White text color */
+}
+
+/* Adjust text color for list items in Light Mode */
+.light-mode #itemList {
+  color: #000000; /* Black text color */
+}
+
+/* Adjust text color for list items in Blue Mode */
+.blue-mode #itemList {
+  color: #000000; /* White text color */
+}
+
+/* Add more styles for other themes if needed */
